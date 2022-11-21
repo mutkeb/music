@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>index.html</title>
+    <style>
+        footer{
+            margin: 0 auto;
+            width: 900px;
+        }
+        footer div{
+            margin-bottom: 30px;
+            color:#A3A3A3;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        footer .L3{
+            color:#262626;
+        }
+        a{
+            position: relative;
+        }
+        a .hidden{
+            display: none;
+        }
+        a:hover .hidden{
+            display: initial;
+            position: absolute;
+            top: 20px;
+            right:-20px;
+        }
+    </style>
+
+</head>
+<body>
+<header  th:fragment="content">
+<main class="container">
+    页面正文
+</main>
+<footer>
+    <div class="L1">
+        <span>2019 douban</span>
+        <a href="">京ICP备11027288号
+            <span class="hidden">京ICP备11027288号</span>
+        </a>
+        <span>网络视听许可证0110418号 京公网安备110105012274</span>
+        <a href="">新出发京批字直接150126号
+            <span class="hidden">新出发京批字直接150126号</span>
+        </a>
+    </div>
+    <div class="L2">
+        <span>违法和不良信息举报 电话：17610209667 邮箱：doubannvgroup.cn</span>
+    </div>
+    <div class="L3">
+        <span>广告合作：adfm@douban.com  FM用户手册  新版说明  我要反馈  豆瓣FM中心</span>
+    </div>
+</footer>
+</header>
+</body>
+</html>

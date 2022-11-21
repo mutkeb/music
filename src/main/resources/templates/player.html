@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器</title>
+    <meta name="referrer" content="never">
+    <link href="./css/player.css" type="text/css" rel="stylesheet">
+<!--    <link type="text/css" rel="stylesheet" href="/css/share.css">-->
+
+</head>
+<body>
+<div th:fragment="player">
+    <nav class="nav">
+        <div class="float-left">
+            <div class="logo">
+                <img src="./img/logo.jpg">
+            </div>
+            <div class="download">
+                <span>下载豆瓣FM APP · 我要反馈</span>
+            </div>
+        </div>
+
+        <div class="float-right">
+            <span>登录 | 注册</span>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="left">
+            <div class="code"><img src="./img/code.jpg"></div>
+            <div class="font">下载豆瓣FM APP让好音乐继续</div>
+        </div>
+        <div class="middle">
+            <div class="one-part">
+                <div class="wave">
+                    <img src="./img/wave.png">
+                </div>
+                <div class="title">
+                    <div >李玖哲  MHZ</div>
+                </div>
+                <div class="arrow">
+                    <img src="./img/arrow.png">
+                </div>
+            </div>
+            <div class="tow-part">
+                <div class="songName" >我不完美</div>
+                <div class="master" >柳工鸿</div>
+                <div class="irons">
+                    <div class="left2">
+                        <div class="time">-03:34</div>
+                        <div class="voice">
+                            <img src="./img/voice.png">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="word">
+                            <img src="./img/word.png">
+                        </div>
+                        <div class="download">
+                            <img src="./img/download.png">
+                        </div>
+                        <div class="plus">
+                            <img src="./img/plus.png">
+                        </div>
+                        <div class="share">
+                            <img src="./img/share.png">
+                        </div>
+                    </div>
+<!--                    <div th:replace="share::share"></div>-->
+                </div>
+                <audio  controls="controls"></audio>
+                <div class="buttos">
+                    <img class="love" src="./img/love.png">
+                    <img class="bin" src="./img/bin.png">
+                    <img class="function" src="./img/function.png">
+                    <img class="way" src="./img/way.png">
+                    <img class="backward" src="./img/backward.png">
+                    <img class="start" src="./img/start.png">
+                    <img class="forward" src="./img/forward.png">
+                </div>
+            </div>
+            <div class="three-part">
+                <a href="/sign">登录/注册</a>
+                <span>后豆瓣FM将永久保留你的收听历史与爱好</span>
+            </div>
+        </div>
+        <div class="right">
+            <img class="avater" src="./img/avater.jpg">
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="mhz">
+                <div class="picture">
+                    <img src="./img/mhz.png">
+                </div>
+                <div class="word">兆赫</div>
+            </div>
+            <div class="collection">
+                <div class="picture">
+                    <img src="./img/collection.png">
+                </div>
+                <div class="word">歌单</div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

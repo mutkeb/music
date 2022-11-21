@@ -1,0 +1,58 @@
+.whole {
+  width: 1400px; }
+  .whole .nav {
+    margin-bottom: 50px; }
+    .whole .nav .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 40px;
+      width: 300px;
+      margin: 0 auto;
+      height: 100px; }
+      .whole .nav .menu > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .whole .nav .menu > div .picture {
+          margin-right: 10px;
+          margin-top: 5px; }
+      .whole .nav .menu img {
+        width: 24px;
+        height: 24px; }
+  .whole .redheart {
+    color: #2F9842;
+    width: 70px;
+    height: 17px;
+    text-align: center;
+    margin: 0 auto; }
+  .whole main {
+    padding-left: 300px; }
+    .whole main .title {
+      height: 50px;
+      padding-left: 70px; }
+      .whole main .title img {
+        width: 42px;
+        height: 42px;
+        border-radius: 21px; }
+      .whole main .title .title-part {
+        float: left; }
+      .whole main .title .special {
+        height: 50px; }
+        .whole main .title .special > div:nth-child(2) {
+          width: 68px;
+          font-size: 12px;
+          color: #9c9c9c;
+          text-align: center;
+          height: 46px;
+          padding-top: 10px;
+          margin-left: 10px; }
+      .whole main .title .bar {
+        padding-left: 70px;
+        width: 700px;
+        height: 1px;
+        margin-top: 25px;
+        margin-bottom: 13px;
+        background: #eaeaea; }
+
+/*# sourceMappingURL=my.css.map */

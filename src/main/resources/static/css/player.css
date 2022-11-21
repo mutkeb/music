@@ -1,0 +1,250 @@
+
+
+body{
+    padding: 30px 200px 0 200px;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+    font-size: 12px;
+    color:#B3B3B3;
+    margin-top: 6px;
+}
+.nav{
+    height: 62px;
+}
+.nav .download{
+    float:left;
+    font-size: 12px;
+    color: #B3B3B3;
+    margin-top: 6px;
+}
+.logo{
+    float:left;
+    width: 80px;
+    margin-right: 40px;
+}
+
+.logo img{
+    width: 80px;
+    height: 32px;
+}
+.main{
+    margin-top:144px;
+}
+
+.main .left{
+    margin-left: 43px;
+    margin-top:78px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.main .left{
+    width: 78px;
+}
+.main .left .code img{
+    width: 78px;
+    height: 79px;
+}
+.main .left .font{
+    width: 77px;
+    height: 28px;
+    opacity: 1;
+    color: rgba(150.96,150.96,150.96,1);
+    font-size: 10px;
+    font-weight: 100;
+    font-family: "PingFang SC";
+    text-align: center;
+}
+.middle{
+    position: relative;
+}
+.wave img{
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top:5px;
+}
+.title{
+    color: rgba(47,152,66,1);
+    font-size: 20px;
+    font-weight: 400;
+}
+.arrow img{
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    left: 130px;
+    top:5px;
+}
+
+.avater{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.tow-part{
+    margin-top: 60px;
+}
+.songName{
+    width: 80px;
+    height: 28px;
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    text-align: left;
+}
+.master{
+    width: 36px;
+    height: 17px;
+    opacity: 1;
+    color: rgba(126.44,126.44,126.44,1);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    margin-top: 10px;
+}
+.irons{
+    margin-top: 15px;
+    height: 40px;
+}
+.irons .left2{
+    float: left;
+}
+.irons .right{
+    float: right;
+    height: 14px;
+}
+.time{
+    float: left;
+    width: 33px;
+    height: 14px;
+    opacity: 1;
+    color: rgba(126.44,126.44,126.44,1);
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    text-align: left;
+}
+.voice{
+    width: 12px;
+    height: 10px;
+    float:left;
+    margin-left: 10px;
+}
+.voice img{
+    width: 12px;
+    height: 20px;
+    margin-top: -2px;
+}
+.word{
+    float: right;
+}
+.plus{
+    float: right;
+}
+.share{
+    float: right;
+}
+.download{
+    float: right;
+}
+.word img  {
+    width: 15px;
+    height: 13px;
+    margin-left: 10px;
+}
+.plus img{
+    width: 15px;
+    height: 13px;
+    margin-left: 10px;
+}
+.share img{
+    width: 15px;
+    height: 13px;
+    margin-left: 10px;
+}
+.download img{
+    width: 15px;
+    height: 13px;
+    margin-left: 10px;
+}
+.buttos{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.love{
+    width: 30px;
+    height: 29px;
+}
+.bin{
+    width: 25px;
+    height: 29px;
+}
+.function{
+    width: 14px;
+    height: 10px;
+}
+.way{
+    width: 14px;
+    height: 12px;
+}
+.backward{
+    width: 25px;
+    height: 28px;
+}
+.start{
+    width: 30px;
+    height: 22px;
+    border-radius: 2px;
+}
+.forward{
+    width: 30px;
+    height: 32px;
+}
+.three-part{
+    width: 300px;
+    height: 30px;
+    opacity: 1;
+    background: rgba(236.94,236.94,236.94,1);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+    margin-top:30px;
+}
+footer{
+    margin-top: 200px;
+}
+.mhz{
+    float: left;
+    position: relative;
+    margin-right: 50px;
+}
+.picture{
+    float: left;
+    margin-right: 6px;
+    margin-top: 1px;
+}
+.picture img{
+    width: 24px;
+    height: 24px;
+}
+.collection{
+    float: left;
+}
+.container{
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*  播放器自带组件*/

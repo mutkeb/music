@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>userguide.html</title>
+    <meta name="referrer" content="never">
+    <link rel="stylesheet" href="./css/userguide.css" type="text/css">
+</head>
+<body>
+
+<div class="whole" th:fragment="userguide">
+    <div class="title">挑选你喜欢的艺术家，开启私人音乐之旅</div>
+    <main>
+        <div class="list" >
+            <div th:each="singer,it : ${singers}" th:if="${it.count} <= 10">
+                <img class="avatar" th:src="${singer.avatar}">
+                <div class="name" th:text="${singer.name}"></div>
+                <div class="like">喜欢</div>
+                <div class="mask">
+                    <img src="/img/gou.webp">
+                </div>
+            </div>
+        </div>
+        <div class="functions">
+            <div class="irons">
+                <div class="iron">
+                    <div class="change"><img src="./img/change.png"></div>
+                    <div>换一批</div>
+                </div>
+                <div class="iron">
+                    <div><img src="./img/search.jpg">自己搜</div>
+                </div>
+            </div>
+            <div class="people">
+                <img src="img/people.png">
+                <img src="img/people.png">
+                <img src="img/people.png">
+                <img src="img/people.png">
+                <img src="img/people.png">
+            </div>
+            <div class="skip">
+                <div>跳过直接去听歌<img src="./img/right-arrow.png"></div>
+            </div>
+        </div>
+    </main>
+</div>
+<div class="bigmask">
+    <div class="my">
+        <img src="/img/whitearrow.jpg">
+        我的私人兆赫
+    </div>
+</div>
+<script type="text/javascript" src="/js/userguide.js"></script>
+</body>
+</html>

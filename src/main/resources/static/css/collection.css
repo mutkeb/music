@@ -1,0 +1,21 @@
+body {
+  width: 1400px; }
+  body .nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 300px; }
+    body .nav .menu > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      body .nav .menu > div .picture {
+        margin-right: 10px;
+        margin-top: 5px; }
+    body .nav .menu img {
+      width: 24px;
+      height: 24px; }
+
+/*# sourceMappingURL=collection.css.map */

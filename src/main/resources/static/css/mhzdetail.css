@@ -1,0 +1,122 @@
+main {
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+  border: 3px #D7D7D7 solid; }
+  main .share {
+    margin-left: 700px; }
+    main .share > div:nth-child(1) {
+      width: 20px;
+      height: 20px;
+      float: left;
+      margin-right: 10px; }
+      main .share > div:nth-child(1) img {
+        width: 12px;
+        height: 14px; }
+    main .share > div:nth-child(2) {
+      float: left;
+      width: 28px;
+      height: 20px;
+      color: #9a9a9a;
+      font-size: 14px; }
+  main .title {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    main .title img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 30px;
+      border-radius: 100px; }
+    main .title .name {
+      width: 200px;
+      height: 42px;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: center; }
+    main .title .like {
+      width: 76px;
+      height: 20px;
+      border: 1px #C5C5C5 solid;
+      color: #c5c5c5;
+      line-height: 20px;
+      text-align: center; }
+  main .bar {
+    height: 1px;
+    background: #eaeaea;
+    margin-top: 42px;
+    margin-bottom: 40px; }
+  main .allSongs {
+    margin-bottom: 20px;
+    height: 20px; }
+    main .allSongs > div:nth-child(1) {
+      width: 20px;
+      height: 20px;
+      float: left;
+      margin-right: 10px; }
+      main .allSongs > div:nth-child(1) img {
+        width: 14px;
+        height: 10px; }
+    main .allSongs > div:nth-child(2) {
+      float: left;
+      width: 100px;
+      height: 17px;
+      color: #2f9842; }
+  main .songlist {
+    height: 200px;
+    margin-bottom: 20px; }
+    main .songlist > div {
+      height: 24px;
+      margin-bottom: 19px; }
+      main .songlist > div div {
+        float: left;
+        color: black; }
+      main .songlist > div .cover {
+        margin-right: 10px; }
+        main .songlist > div .cover img {
+          width: 20px;
+          height: 20px; }
+  main .word {
+    height: 17px;
+    font-size: 12px;
+    color: #afafaf; }
+  main .subject {
+    margin-bottom: 20px;
+    height: 20px; }
+    main .subject > div:nth-child(1) {
+      width: 20px;
+      height: 20px;
+      float: left;
+      margin-right: 10px; }
+      main .subject > div:nth-child(1) img {
+        width: 14px;
+        height: 10px; }
+    main .subject > div:nth-child(2) {
+      float: left;
+      width: 150px;
+      height: 17px;
+      color: #2f9842; }
+  main .subjectlist {
+    margin-top: 76px; }
+    main .subjectlist > div {
+      float: left;
+      width: 100px;
+      margin-bottom: 40px;
+      margin-right: 57px; }
+      main .subjectlist > div .avater {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        border-radius: 50px; }
+      main .subjectlist > div .name {
+        color: black;
+        font-family: "PingFang SC";
+        text-align: center;
+        width: 100px;
+        height: 20px;
+        line-height: 20px; }
+
+/*# sourceMappingURL=mhzdetail.css.map */

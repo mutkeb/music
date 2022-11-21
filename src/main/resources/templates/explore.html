@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>explore.html</title>
+    <meta name="referrer" content="never">
+    <link type="text/css" rel="stylesheet" href="./css/explore.css">
+</head>
+<body>
+<main th:fragment="explore">
+    <nav class="nav">
+        <div class="menu">
+            <div class="mhz">
+                <div class="picture">
+                    <img src="./img/mhz.png">
+                </div>
+                <div class="paper">兆赫</div>
+            </div>
+            <div class="collection">
+                <div class="picture">
+                    <img src="./img/collection.png">
+                </div>
+                <div class="paper">歌单</div>
+            </div>
+            <div class="my">
+                <div class="picture">
+                    <img src="./img/my.png">
+                </div>
+                <div class="paper">我的</div>
+            </div>
+        </div>
+        <div class="two-mhz">
+            <div class="private">
+                <img src="./img/private.png">
+                <div>
+                    <div class="title">我的私人兆赫</div>
+                    <div class="details">豆瓣FM会根据你的喜好来推荐歌曲，让你与喜欢的音乐不期而遇</div>
+                </div>
+            </div>
+            <div class="special">
+                <img src="./img/special.jpg">
+                <div>
+                    <div class="title">豆瓣精选兆赫</div>
+                    <div class="details">汇聚各种音乐风格的精选兆赫，从这里开始音乐漫游吧</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="artist">
+        <div class="title">
+            <div>从艺术家出发</div>
+            <img src="./img/ear.jpg">
+        </div>
+        <div class="list" >
+            <div th:each="artistData,it : ${artistDatas}" th:if="${it.count} <= 10">
+                <img class="avater" th:src="${artistData.cover}">
+                <div class="name" th:text="${artistData.name}"></div>
+                <div class="description" th:text="${artistData.description}"></div>
+            </div>
+        </div>
+    </div>
+    <div class="more">加载更多兆赫</div>
+    <div class="mhzModels" th:each="mhzModels : ${mhzViewModels}">
+        <div  th:if="${mhzModels.title} == 'mood'">
+            <div class="title">心情/场景</div>
+            <div class="mood" th:each="mood : ${mhzModels.subjects}">
+                <div class="word">
+                    <span th:text="${mood.name}"></span>
+                    <span>MHz</span>
+                </div>
+            </div>
+        </div>
+        <div  th:if="${mhzModels.title} == 'age'">
+            <div class="title">语言/年代</div>
+            <div class="age" th:each="age : ${mhzModels.subjects}">
+                <div class="word">
+                    <span th:text="${age.name}"></span>
+                    <span>MHz</span>
+                </div>
+            </div>
+        </div>
+        <div  th:if="${mhzModels.title} == 'style'">
+            <div class="title">风格/流派</div>
+            <div class="style" th:each="style : ${mhzModels.subjects}">
+                <div class="word">
+                    <span th:text="${style.name}"></span>
+                    <span>MHz</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

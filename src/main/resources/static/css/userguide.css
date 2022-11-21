@@ -1,0 +1,146 @@
+.whole {
+  padding-top: 110px;
+  padding-bottom: 50px;
+  width: 1000px;
+  margin: 0 auto; }
+  .whole .title {
+    width: 540px;
+    height: 42px;
+    margin: 0 auto;
+    font-size: 30px;
+    color: black;
+    font-family: "PingFang SC"; }
+  .whole .list {
+    width: 1000px;
+    margin-top: 60px;
+    height: 550px; }
+    .whole .list > div {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 80px; }
+    .whole .list .mask {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      background: #FF6C6A;
+      opacity: 0.800000011920929;
+      display: none; }
+      .whole .list .mask img {
+        width: 30px;
+        height: 22px;
+        position: absolute;
+        left: 30%;
+        top: 30%; }
+    .whole .list .avatar {
+      width: 40%;
+      height: 40%;
+      border-radius: 60px; }
+    .whole .list .name {
+      margin-top: 20px;
+      width: 160px;
+      height: 20px;
+      opacity: 1;
+      color: black;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "PingFang SC";
+      text-align: center; }
+    .whole .list .like {
+      margin-top: 10px;
+      width: 40px;
+      height: 20px;
+      opacity: 1;
+      color: #ff4874;
+      font-size: 12px;
+      font-family: "PingFang SC";
+      text-align: center;
+      line-height: 20px;
+      border: 1px #FF4874 solid; }
+  .whole .functions {
+    width: 300px;
+    margin: 0 auto; }
+    .whole .functions .irons {
+      margin-left: 25px;
+      width: 300px;
+      height: 40px; }
+      .whole .functions .irons .iron {
+        width: 80px;
+        margin-right: 48px;
+        float: left;
+        margin-bottom: 30px; }
+        .whole .functions .irons .iron div {
+          float: left; }
+        .whole .functions .irons .iron img {
+          width: 18px;
+          height: 18px; }
+    .whole .functions .people {
+      margin-bottom: 60px;
+      height: 50px;
+      width: 280px;
+      display: flex;
+      justify-content: space-between; }
+      .whole .functions .people img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px; }
+    .whole .functions .skip {
+      width: 200px;
+      height: 17px;
+      opacity: 1;
+      color: #aeaeae;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "PingFang SC";
+      text-align: left;
+      margin-left: 100px; }
+      .whole .functions .skip div {
+        width: 120px;
+        position: relative; }
+        .whole .functions .skip div img {
+          width: 20px;
+          height: 15px;
+          position: absolute;
+          left: 90px;
+          top: 0px; }
+
+.bigmask {
+  display: none;
+  width: 1440px;
+  background: #9a9a9a;
+  height: 800px; }
+  .bigmask .my {
+    width: 350px;
+    height: 40px;
+    border-radius: 100px;
+    background: #3dbe54;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25px;
+    color: white;
+    left: 40%;
+    top: 50%;
+    position: absolute; }
+    .bigmask .my img {
+      width: 15px;
+      height: 14px;
+      border-radius: 2px; }
+  .bigmask .people {
+    margin-bottom: 60px;
+    height: 50px;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: absolute;
+    top: 30%;
+    left: 40%; }
+    .bigmask .people img {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px; }
+
+/*# sourceMappingURL=userguide.css.map */

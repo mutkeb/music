@@ -1,0 +1,73 @@
+.whole {
+  width: 1400px;
+  .nav {
+    margin-bottom: 50px;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 40px;
+      width: 300px;
+      margin: 0 auto;
+      height: 100px;
+      & > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .picture {
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+      }
+      img {
+        width: 24px;
+        height: 24px;
+
+      }
+    }
+  }
+  .redheart{
+    color:#2F9842;
+    width: 70px;
+    height: 17px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main{
+    padding-left: 300px;
+    .title{
+      height: 50px;
+      padding-left: 70px;
+      img{
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+      }
+      .title-part{
+        float: left;
+      }
+      .special{
+        height: 50px;
+        >div:nth-child(2){
+          width: 68px;
+          font-size: 12px;
+          color: rgba(156,156,156,1);
+          text-align: center;
+          height: 46px;
+          padding-top: 10px;
+          margin-left: 10px;
+        }
+      }
+      .bar{
+        padding-left: 70px;
+        width: 700px;
+        height: 1px;
+        margin-top: 25px;
+        margin-bottom: 13px;
+        background: rgba(233.75,233.75,233.75,1);
+      }
+    }
+
+  }
+}

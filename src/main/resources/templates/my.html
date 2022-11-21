@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="never">
+    <title>my.html</title>
+    <link rel="stylesheet" href="/css/my.css" type="text/css">
+</head>
+<body>
+<div class="whole" xmlns:th="http://www.thymeleaf.org">
+    <nav class="nav">
+        <div class="menu">
+            <div class="mhz">
+                <div class="picture">
+                    <img src="./img/mhz.png">
+                </div>
+                <div class="paper">兆赫</div>
+            </div>
+            <div class="collection">
+                <div class="picture">
+                    <img src="./img/collection.png">
+                </div>
+                <div class="paper">歌单</div>
+            </div>
+            <div class="my">
+                <div class="picture">
+                    <img src="./img/my.png">
+                </div>
+                <div class="paper">我的</div>
+            </div>
+        </div>
+        <div class="redheart">我的红心</div>
+    </nav>
+    <main>
+        <div class="title">
+            <div class="special">
+                <div class="title-part">
+                    <img src="/img/redheart.jpg">
+                </div>
+                <div class="title-part" th:text="|${songs.size()}首红心歌曲|"></div>
+            </div>
+            <div class="bar"></div>
+        </div>
+        <div class="list" th:each="song,it : ${songs}">
+            <div th:text="${it.count}"></div>
+            <img th:src="${song.cover}">
+            <div th:text="${song.name}"></div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

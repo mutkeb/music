@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>search.html</title>
+    <meta name="referrer" content="never">
+    <link href="./css/search.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div th:fragment="search" class="search">
+    <div>
+        <input  placeholder="搜你喜欢的歌曲" name="keyword" >
+        <img src="img/search.jpg">
+    </div>
+    <div class="cancel">取消</div>
+</div>
+<ul class="content"></ul>
+<script type="text/javascript" src="./js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+main {
+  width: 1400px; }
+  main .nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 300px; }
+    main .nav .menu > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      main .nav .menu > div .picture {
+        margin-right: 10px;
+        margin-top: 5px; }
+    main .nav .menu img {
+      width: 24px;
+      height: 24px; }
+  main .nav .two-mhz {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 50px; }
+    main .nav .two-mhz > div {
+      display: flex; }
+    main .nav .two-mhz img {
+      width: 40px;
+      height: 40px; }
+    main .nav .two-mhz .title {
+      width: 72px;
+      height: 17px;
+      opacity: 1;
+      color: black;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "PingFang SC";
+      text-align: left; }
+    main .nav .two-mhz .details {
+      width: 350px;
+      height: 17px;
+      opacity: 1;
+      color: #bcbbbb;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "PingFang SC";
+      text-align: left; }
+  main .artist {
+    padding-left: 200px; }
+    main .artist .title {
+      width: 140px;
+      display: flex;
+      align-items: center;
+      color: #a6a6a6;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "PingFang SC";
+      text-align: left; }
+      main .artist .title div {
+        width: 105px; }
+      main .artist .title img {
+        width: 15px;
+        height: 15px; }
+    main .artist .list {
+      width: 1000px;
+      margin-top: 50px;
+      height: 550px; }
+      main .artist .list > div {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 80px; }
+      main .artist .list .avater {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px; }
+      main .artist .list .name {
+        margin-top: 20px;
+        width: 120px;
+        height: 20px;
+        opacity: 1;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "PingFang SC";
+        text-align: center; }
+      main .artist .list .description {
+        margin-top: 10px;
+        width: 200px;
+        height: 17px;
+        opacity: 1;
+        color: #b0b0b0;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "PingFang SC";
+        text-align: center; }
+  main .more {
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    padding-top: 4px;
+    color: #aeaeae;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 auto; }
+  main .mhzModels {
+    padding-left: 200px;
+    margin-top: 40px;
+    height: 200px; }
+    main .mhzModels .title {
+      color: #a6a6a6;
+      font-size: 12px;
+      font-weight: 400; }
+    main .mhzModels .age, main .mhzModels .mood, main .mhzModels .style {
+      float: left;
+      margin-right: 140px;
+      width: 70px;
+      height: 60px;
+      line-height: 60px; }
+    main .mhzModels .word span:nth-child(1) {
+      color: #1c1c1c;
+      font-size: 14px;
+      font-weight: 500; }
+    main .mhzModels .word span:nth-child(2) {
+      color: #a5a5a5;
+      font-size: 12px;
+      font-weight: 400; }
+
+/*# sourceMappingURL=explore.css.map */

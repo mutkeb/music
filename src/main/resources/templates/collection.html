@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>collection.html</title>
+    <link href="/css/collection.css" rel="stylesheet" type="text/css">
+    <meta name="referrer" content="never">
+</head>
+<body>
+<div class="whole" th:fragment="collection">
+    <nav class="nav">
+        <div class="menu">
+            <div class="mhz">
+                <div class="picture">
+                    <img src="./img/mhz.png">
+                </div>
+                <div class="paper">兆赫</div>
+            </div>
+            <div class="collection">
+                <div class="picture">
+                    <img src="./img/collection.png">
+                </div>
+                <div class="paper">歌单</div>
+            </div>
+            <div class="my">
+                <div class="picture">
+                    <img src="./img/my.png">
+                </div>
+                <div class="paper">我的</div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="list">
+            <div th:each="collection,it : ${collections}" th:if="${it.count} <= 8">
+                <img th:src="${collection.cover}">
+                <div th:text="${collection.name}"></div>
+                <div th:text="${collection.description}"></div>
+                <div th:each="song,it :${songMap.get(collection)}" th:if="${it.count}<= 4">
+                    <div>
+                        <div th:text="${song.name}"></div>
+                        <div th:each="singer: ${singerMap.get(song)}">
+                            <span th:text="${singer.name}"></span>
+                        </div>
+                    </div>
+                </div>
+                <div th:text="|曲目 ${songMap.get(collection).size()}|"></div>
+                <div>收藏 0</div>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
